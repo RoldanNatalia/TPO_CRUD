@@ -7,7 +7,7 @@ if (document.getElementById("app")) {
                 productos: [],
                 errored: false,
                 loading: true,
-                url: "http://localhost:5000/productos"
+                url: "https://sabin.pythonanywhere.com/playlists"
                 }
         },
         methods: {
@@ -23,7 +23,7 @@ if (document.getElementById("app")) {
                     })
             },
             eliminar(producto) {
-                const url = 'http://localhost:5000/productos/' + producto;
+                const url = 'https://sabin.pythonanywhere.com/playlists' + producto;
                 var options = {
                     method: 'DELETE',
                 }

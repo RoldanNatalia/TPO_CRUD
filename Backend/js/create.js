@@ -14,7 +14,7 @@ function guardar() {
         youtube:y
         
     }
-    let url = "http://localhost:5000/productos"
+    let url = "https://sabin.pythonanywhere.com/playlists"
     var options = {
         body: JSON.stringify(producto),
         method: 'POST',
