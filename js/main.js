@@ -95,7 +95,7 @@ const navVar = ` <nav class="nav">
                       <li class="nav--ul--item"><a href="./newletter.html" class="nav--ul--link nav--link">music history</a></li>
                       <li class="nav--ul--item"><a href="./contact.html" class="nav--ul--link nav--link">contact</a></li>
                       <li class="nav--ul--item"><a href="./us.html" class="nav--ul--link nav--link">us</a></li>
-                      <li ><a href="#" class="nav--logo--link"><img id="nav--admin" src="https://i.ibb.co/CzV1CMj/59170.png" alt=""></a></li>
+                      <li ><a href="../Backend/crudIndex.html" class="nav--logo--link"><img id="nav--admin" src="https://i.ibb.co/CzV1CMj/59170.png" alt=""></a></li>
                     </ul>
                   </nav> ` ;
 
