@@ -21,40 +21,38 @@
             <h1>PlayLists</h1>
             <br>
             <section v-if="errored">
-             <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente mas tarde</p>
+             <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente más tarde</p>
             </section>
             <section v-else>
-                <div v-if="loading">Cargando....
+                <div v-if="loading">Cargando... 
                     <div class="spinner-border" role="status">
                         <span class="sr-only"></span>
                     </div>
                 </div>
                 <div v-else>
-                    <a href="create.html" class="btn btn-success">Nuevo</a>
+                    <a href="./create.html" class="btn btn-success">Nuevo</a>
                     <br><br>
                     <table class="table table-striped table-responsive">
                         <tr>
                             <th>Id</th>
-                            <th>Titulo</th>
                             <th>Imagen</th>
+                            <th>Título</th>
                             <th>Descripción</th>
                             <th>Spotify</th>
                             <th>Youtube</th>
                             <th>Acciones</th>
                         </tr>
-                        <tr v-for="producto in productos">
-                            <td>{{producto.id}}</td>
-                            <td>{{producto.name}}</td>
-                            <td>
-                                <img :src="producto.image" alt="'imagen:'+producto.name" width="100">
+                        <tr v-for="playlist in playlists">
+                            <td>{{playlist.id}}</td>
+                            <td><img src="{{playlist.image}}" width="100">
                             </td>
-                            <td>{{producto.preview}}</td>
-                            <td>{{producto.spotify}}</td>
-                            <td>{{producto.youtube}}</td>
-                            
+                            <td>{{playlist.name}}</td>
+                            <td>{{playlist.preview}}</td>
+                            <td>{{playlist.spotify}}</td>
+                            <td>{{playlist.youtube}}</td>
                             <td>
-                                <a :href="'update.html?id='+producto.id+'&title='+producto.name+'&imagen='+producto.image+'&description='+producto.preview+'&spotify='+producto.spotify+'&youtube='+producto.youtube" class="btn btn-primary">Modificar</a>
-                                <button v-on:click="eliminar(producto.id)" class="btn btn-danger">Eliminar</button>
+                                <a :href="'./update.html?id='+playlist.id+'&image='+playlist.image+'&name='+playlist.name+'&preview='+playlist.preview+'&spotify='+playlist.spotify+'&youtube='+playlist.youtube" class="btn btn-primary">Modificar</a>
+                                <button v-on:click="eliminar(playlist.id)" class="btn btn-danger">Eliminar</button>
                             </td>
                         </tr>
                     </table>
@@ -62,7 +60,7 @@
         </div>
     </main>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="../js/crudMain.js"></script>
+    <script src="../Backend/js/crudMain.js"></script>
 </body>
     
 </html>

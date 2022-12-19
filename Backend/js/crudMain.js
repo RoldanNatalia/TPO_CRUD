@@ -4,7 +4,7 @@ if (document.getElementById("app")) {
     createApp({
         data() {
             return {
-                productos: [],
+                playlists: [],
                 errored: false,
                 loading: true,
                 url: "https://sabin.pythonanywhere.com/playlists"
@@ -15,15 +15,15 @@ if (document.getElementById("app")) {
                 fetch(url)
                     .then(response => response.json())
                     .then(data => {
-                        this.productos = data;
+                        this.playlists = data;
                         this.loading = false;
                     })
                     .catch(err => {
                         this.errored = true
                     })
             },
-            eliminar(producto) {
-                const url = 'https://sabin.pythonanywhere.com/playlists' + producto;
+            eliminar(playlist) {
+                const url = 'https://sabin.pythonanywhere.com/playlists' + playlist;
                 var options = {
                     method: 'DELETE',
                 }
