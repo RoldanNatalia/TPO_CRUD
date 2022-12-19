@@ -13,19 +13,19 @@
 <body>
     <main style="margin: 1% 20%;">
         <div class="container">
-            <h1>Modificacion de PlayList</h1>
+            <h1>Modificación de PlayList</h1>
             <form >
                 <div class="mb-3">
                     <label for="txtId">Id</label>
                             <input type="text" class="form-control" name="txtId" id="txtId" disabled><br>
                 </div>
                 <div class="mb-3">
-                    <label for="txtTitulo">Título:</label>
-                    <input type="text" class="form-control" name="txtTitulo" id="txtTitulo"><br>
-                </div>
-                <div class="mb-3">
                     <label for="txtImagen">Imagen:</label>
                     <input type="url" class="form-control" name="txtImagen" id="txtImagen"> <br>
+                </div>
+                <div class="mb-3">
+                    <label for="txtTitulo">Título:</label>
+                    <input type="text" class="form-control" name="txtTitulo" id="txtTitulo"><br>
                 </div>
                 <div class="mb-3">
                     <label for="txtDescription">Descripción:</label>
@@ -33,11 +33,11 @@
                 </div>
                 <div class="mb-3">
                     <label for="txtSpotify">Spotify:</label>
-                    <input type="url" class="form-control" name="txtSpotify" id="txtSpotify"> <br>
+                    <input type="text" class="form-control" name="txtSpotify" id="txtSpotify"> <br>
                 </div>
                 <div class="mb-3">
                     <label for="txtYoutube">Youtube:</label>
-                    <input type="url" class="form-control" name="txtYoutube" id="txtYoutube"> <br>
+                    <input type="text" class="form-control" name="txtYoutube" id="txtYoutube"> <br>
                 </div>
 
                 <button type="button" class="btn btn-success" onclick="modificar()">Grabar </button>
@@ -47,6 +47,6 @@
             
         </div>
     </main>
-    <script src="./js/update.js"></script>
+    <script src="../Backend/js/update.js"></script>
 </body>
 </html>
