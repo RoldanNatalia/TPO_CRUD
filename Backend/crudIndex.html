@@ -44,9 +44,8 @@
                         </tr>
                         <tr v-for="playlist in playlists">
                             <td>{{playlist.id}}</td>
-                            <td><img src="{{playlist.image}}" alt=":{{playlist.name}}"></td>
-                               <!-- <img src={{playlist.image}} width="100">-->
-                            
+                            <td><img :src="playlist.image" width="100">
+                            </td>
                             <td>{{playlist.name}}</td>
                             <td>{{playlist.preview}}</td>
                             <td>{{playlist.spotify}}</td>
