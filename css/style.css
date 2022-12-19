@@ -494,3 +494,9 @@ footer{
 .footer-us-redes-link{
     margin:0 5px;
 }
+/*ADMINISTRACION*/
+#nav--admin{
+    width: 22px;
+    margin-top:30px;
+    margin-left:10px;
+}
