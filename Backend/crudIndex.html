@@ -51,7 +51,7 @@
                             <td>{{playlist.spotify}}</td>
                             <td>{{playlist.youtube}}</td>
                             <td>
-                                <a :href="'./update.html?id='+playlist.id+'&image='+playlist.image+'&name='+playlist.name+'&preview='+playlist.preview+'&spotify='+playlist.spotify+'&youtube='+playlist.youtube" class="btn btn-primary">Modificar</a>
+                                <a :href="'./update.html?id='+playlist.id+'&name='+playlist.name+'&image='+playlist.image+'&preview='+playlist.preview+'&spotify='+playlist.spotify+'&youtube='+playlist.youtube" class="btn btn-primary">Modificar</a>
                                 <button v-on:click="eliminar(playlist.id)" class="btn btn-danger">Eliminar</button>
                             </td>
                         </tr>

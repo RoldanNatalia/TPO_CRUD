@@ -23,7 +23,7 @@ if (document.getElementById("app")) {
                     })
             },
             eliminar(playlist) {
-                const url = 'https://sabin.pythonanywhere.com/playlists' + playlist;
+                const url = 'https://sabin.pythonanywhere.com/playlists/' + playlist;
                 var options = {
                     method: 'DELETE',
                 }

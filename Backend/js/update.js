@@ -30,7 +30,7 @@ function modificar() {
         youtube:y
         
     }
-    let url = "https://sabin.pythonanywhere.com/playlists"+id
+    let url = "https://sabin.pythonanywhere.com/playlists/"+id
     var options = {
         body: JSON.stringify(producto),
         method: 'PUT',
